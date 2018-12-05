@@ -14,6 +14,12 @@ Explanation: 342 + 465 = 807.
 
 */
 
+/*
+
+O(n+m),O(max(n,m))
+
+*/
+
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode dummy = new ListNode(0);
     ListNode prev = dummy;
