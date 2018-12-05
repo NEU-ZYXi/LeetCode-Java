@@ -25,7 +25,6 @@ A   L S  I G
 Y A   H R
 P     I
 
-
 */
 
 /*
