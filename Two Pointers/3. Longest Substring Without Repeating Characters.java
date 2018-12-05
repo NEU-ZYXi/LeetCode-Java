@@ -21,6 +21,12 @@ Explanation: The answer is "wke", with the length of 3.
 
 */
 
+/*
+
+O(n),O(n)
+
+*/
+
 public int lengthOfLongestSubstring(String s) {
     int ans = 0;
     Map<Character, Integer> map = new HashMap<>();
