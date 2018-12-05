@@ -15,3 +15,5 @@
 [Divide and Conquer](https://github.com/NEU-ZYXi/LeetCode/tree/master/Divide%20and%20Conquer)
 
 [Binary Search](https://github.com/NEU-ZYXi/LeetCode/tree/master/Binary%20Search)
+
+[Dynamic Programming](https://github.com/NEU-ZYXi/LeetCode/tree/master/Dynamic%20Programming)
