@@ -23,6 +23,7 @@ The median is (2 + 3)/2 = 2.5
 Solution: Assume nums1[0...i]+nums2[0...j]=sortedArray[0...half], half=(n+m+1)/2, so j=half-i
           since 0<=i<=n, then (m-n+1)/2<=j<=(n+m+1)/2, so to promise j>=0, m>=n
           use binary search to find i,j, then get the maxLeft(nums1[i-1] or nums2[j-1]) and minRight(nums1[i] or nums2[j])
+O(log(min(n,m)),O(1)          
 
 */
 public double findMedianSortedArrays(int[] nums1, int[] nums2) {
