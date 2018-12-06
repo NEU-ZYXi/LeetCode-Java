@@ -57,7 +57,6 @@ Solution: dp[i][j] means whether s[0...i] and p[0...j] is match
                   =dp[i][j-1], * means one character which is the previous one
                   =dp[i-1][j], * means more characters which we could remove the character in s
           dp[i][j]=dp[i][j-2], if s[i]!=p[j-1]
-          
 O(n^2),O(n^2)          
 
 */
