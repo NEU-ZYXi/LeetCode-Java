@@ -19,3 +19,5 @@
 [Dynamic Programming](https://github.com/NEU-ZYXi/LeetCode/tree/master/Dynamic%20Programming)
 
 [Backtracking](https://github.com/NEU-ZYXi/LeetCode/tree/master/Backtracking)
+
+[Stack](https://github.com/NEU-ZYXi/LeetCode/tree/master/Stack)
