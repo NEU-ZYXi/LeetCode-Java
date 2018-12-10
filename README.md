@@ -21,3 +21,5 @@
 [Backtracking](https://github.com/NEU-ZYXi/LeetCode/tree/master/Backtracking)
 
 [Stack](https://github.com/NEU-ZYXi/LeetCode/tree/master/Stack)
+
+[Heap](https://github.com/NEU-ZYXi/LeetCode/tree/master/Heap)
