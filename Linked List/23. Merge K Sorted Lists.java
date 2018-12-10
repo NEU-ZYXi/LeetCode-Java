@@ -16,6 +16,7 @@ Output: 1->1->2->3->4->4->5->6
 
 /*
 
+Solution 1.
 O(mlogn),O(1)
 where n is the length of lists, m is the average size of each ListNode
 
@@ -60,6 +61,31 @@ private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
     return dummy.next;
 }
 
+/*
+
+Solution 2.
+O(mlogn),O(n)
+
+*/
+
+public ListNode mergeKLists(ListNode[] lists) {
+    if (lists.length == 0)
+        return null;
+    PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+    for (ListNode l : lists) {
+        if (l != null) pq.offer(l);
+    }
+    ListNode dummy = new ListNode(0);
+    ListNode prev = dummy;
+    while (!pq.isEmpty()) {
+        ListNode cur = pq.poll();
+        prev.next = cur;
+        prev = prev.next;
+        cur = cur.next;
+        if (cur != null) pq.offer(cur);
+    }
+    return dummy.next;
+}
 
 
 
