@@ -8,6 +8,8 @@
 
 [Math](https://github.com/NEU-ZYXi/LeetCode/tree/master/Math)
 
+[Sort](https://github.com/NEU-ZYXi/LeetCode/tree/master/Sort)
+
 [Two Pointers](https://github.com/NEU-ZYXi/LeetCode/tree/master/Two%20Pointers)
 
 [String](https://github.com/NEU-ZYXi/LeetCode/tree/master/String)
