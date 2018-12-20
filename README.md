@@ -27,3 +27,5 @@
 [Stack](https://github.com/NEU-ZYXi/LeetCode/tree/master/Stack)
 
 [Heap](https://github.com/NEU-ZYXi/LeetCode/tree/master/Heap)
+
+[Bit Manipulation](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bit%20Manipulation)
