@@ -45,7 +45,29 @@ private void dfs(List<List<Integer>> ans, List<Integer> tmp, int[] nums, int idx
 
 /*
 
-Solution 2. bit manipulation
+Solution 2. iterative method
+O(n*2^n),O(2^n)
+
+*/
+
+public List<List<Integer>> subsets(int[] nums) {
+    List<List<Integer>> ans = new ArrayList<>();
+    ans.add(new ArrayList<>());
+    for (int i = 0; i < nums.length; ++i) {
+        int sz = ans.size();
+        for (int j = 0; j < sz; ++j) {
+            List<Integer> tmp = new ArrayList<>(ans.get(j));
+            tmp.add(nums[i]);
+            ans.add(tmp);
+        }
+    }
+    return ans;
+}
+
+
+/*
+
+Solution 3. bit manipulation
 use bits to represent whether the ith element is taken or not, we have j=2^n possible subsets in total
 for each one, if ith bit is '1' which means (j>>i)&1=1, the ith element is in this subset
 O(n*2^n),O(1)
