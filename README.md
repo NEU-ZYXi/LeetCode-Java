@@ -14,6 +14,8 @@
 
 [String](https://github.com/NEU-ZYXi/LeetCode/tree/master/String)
 
+[Tree](https://github.com/NEU-ZYXi/LeetCode/tree/master/Tree)
+
 [Greedy](https://github.com/NEU-ZYXi/LeetCode/tree/master/Greedy)
 
 [Divide and Conquer](https://github.com/NEU-ZYXi/LeetCode/tree/master/Divide%20and%20Conquer)
