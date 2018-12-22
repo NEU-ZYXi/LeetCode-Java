@@ -79,7 +79,7 @@ public List<TreeNode> generateTrees(int n) {
                 for (TreeNode right : dp[i - j - 1]) {
                     TreeNode root = new TreeNode(j + 1);
                     root.left = left;
-                    root.right = clone(right, j + 1);
+                    root.right = update(right, j + 1);
                     dp[i].add(root);
                 }
             }
@@ -88,11 +88,11 @@ public List<TreeNode> generateTrees(int n) {
     return dp[n];
 }
 
-private TreeNode clone(TreeNode root, int offset) {
+private TreeNode update(TreeNode root, int offset) {
     if (root == null) return null;
     TreeNode node = new TreeNode(root.val + offset);
-    node.left = clone(root.left, offset);
-    node.right = clone(root.right, offset);
+    node.left = update(root.left, offset);
+    node.right = update(root.right, offset);
     return node;
 }
 
