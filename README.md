@@ -16,6 +16,8 @@
 
 [Tree](https://github.com/NEU-ZYXi/LeetCode/tree/master/Tree)
 
+[Depth-first Search](https://github.com/NEU-ZYXi/LeetCode/tree/master/Depth-first%20Search)
+
 [Greedy](https://github.com/NEU-ZYXi/LeetCode/tree/master/Greedy)
 
 [Divide and Conquer](https://github.com/NEU-ZYXi/LeetCode/tree/master/Divide%20and%20Conquer)
