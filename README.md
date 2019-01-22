@@ -18,6 +18,10 @@
 
 [Depth-first Search](https://github.com/NEU-ZYXi/LeetCode/tree/master/Depth-first%20Search)
 
+[Breadth-first Search](https://github.com/NEU-ZYXi/LeetCode/tree/master/Breadth-first%20Search)
+
+[Graph](https://github.com/NEU-ZYXi/LeetCode/tree/master/Graph)
+
 [Greedy](https://github.com/NEU-ZYXi/LeetCode/tree/master/Greedy)
 
 [Divide and Conquer](https://github.com/NEU-ZYXi/LeetCode/tree/master/Divide%20and%20Conquer)
