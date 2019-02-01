@@ -41,3 +41,7 @@
 [Design](https://github.com/NEU-ZYXi/LeetCode/tree/master/Design)
 
 [MySQL](https://github.com/NEU-ZYXi/LeetCode/tree/master/MySQL)
+
+[Bash](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bash)
+
+# Thank you
