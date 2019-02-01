@@ -1,5 +1,5 @@
 
-:'
+: '
 
 Write a bash script to calculate the frequency of each word in a text file words.txt.
 For simplicity sake, you may assume:
@@ -20,7 +20,7 @@ day 1
 
 '
 
-:'
+: '
 
 tr -s: truncate the string with target string, but only remaining one instance (e.g. multiple whitespaces)
 sort: To make the same string successive so that uniq could count the same string fully and correctly.
