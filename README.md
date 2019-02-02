@@ -22,6 +22,8 @@
 
 [Graph](https://github.com/NEU-ZYXi/LeetCode/tree/master/Graph)
 
+[Union Find](https://github.com/NEU-ZYXi/LeetCode/tree/master/Union%20Find)
+
 [Greedy](https://github.com/NEU-ZYXi/LeetCode/tree/master/Greedy)
 
 [Divide and Conquer](https://github.com/NEU-ZYXi/LeetCode/tree/master/Divide%20and%20Conquer)
