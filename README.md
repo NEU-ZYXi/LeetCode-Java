@@ -40,6 +40,8 @@
 
 [Heap](https://github.com/NEU-ZYXi/LeetCode/tree/master/Heap)
 
+[Trie](https://github.com/NEU-ZYXi/LeetCode/tree/master/Trie)
+
 [Bit Manipulation](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bit%20Manipulation)
 
 [Design](https://github.com/NEU-ZYXi/LeetCode/tree/master/Design)
