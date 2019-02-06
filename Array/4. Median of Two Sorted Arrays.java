@@ -26,6 +26,7 @@ Solution: Assume nums1[0...i]+nums2[0...j]=sortedArray[0...half], half=(n+m+1)/2
 O(log(min(n,m)),O(1)          
 
 */
+
 public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     int n = nums1.length, m = nums2.length;
     if (n > m) return findMedianSortedArrays(nums2, nums1);
