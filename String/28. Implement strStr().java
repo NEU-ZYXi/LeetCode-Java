@@ -16,6 +16,7 @@ Output: -1
 
 /*
 
+Solution 1: check each prefix of haystack with needle
 O(n^2),O(1)
 
 */
@@ -29,6 +30,14 @@ public int strStr(String haystack, String needle) {
         }
     }
 }
+
+
+/*
+
+Solution 2: KMP algorithm
+
+*/
+
 
 
 
