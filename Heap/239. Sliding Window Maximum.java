@@ -44,5 +44,31 @@ public int[] maxSlidingWindow(int[] nums, int k) {
 }
 
 
+/*
+
+Solution 2: use maxLeft and maxRight to track the maximum of left and right of nums[i]
+            maxLeft[i] and maxRight[i] is the maximum of window of size k
+            for ans[i], choose the larger one of maxLeft[i+k-1] and maxRight[i]
+O(n),O(n)            
+
+*/
+
+public int[] maxSlidingWindow(int[] nums, int k) {
+    if (k <= 0) return new int[0];
+    int n = nums.length;
+    int[] maxLeft = new int[n], maxRight = new int[n];
+    maxLeft[0] = nums[0];
+    maxRight[n - 1] = nums[n - 1];
+    for (int i = 1; i < n; ++i) {
+        maxLeft[i] = i % k == 0 ? nums[i] : Math.max(maxLeft[i - 1], nums[i]);
+        int j = n - i - 1;
+        maxRight[j] = j % k == 0 ? nums[j] : Math.max(maxRight[j + 1], nums[j]);
+    }
+    int[] ans = new int[n - k + 1];
+    for (int i = 0, j = 0; j <= n - k; ++i, ++j) ans[i] = Math.max(maxLeft[j + k - 1], maxRight[j]);
+    return ans;
+}
+
+
 
 
