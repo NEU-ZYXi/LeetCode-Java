@@ -48,6 +48,8 @@
 
 [Design](https://github.com/NEU-ZYXi/LeetCode/tree/master/Design)
 
+[Brainteaser](https://github.com/NEU-ZYXi/LeetCode/tree/master/Brainteaser)
+
 [MySQL](https://github.com/NEU-ZYXi/LeetCode/tree/master/MySQL)
 
 [Bash](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bash)
