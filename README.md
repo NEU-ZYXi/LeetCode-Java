@@ -44,6 +44,10 @@
 
 [Trie](https://github.com/NEU-ZYXi/LeetCode/tree/master/Trie)
 
+[Segment Tree](https://github.com/NEU-ZYXi/Xi-LeetCode/tree/master/Segment%20Tree)
+
+[Binary Indexed Tree](https://github.com/NEU-ZYXi/Xi-LeetCode/tree/master/Binary%20Indexed%20Tree)
+
 [Bit Manipulation](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bit%20Manipulation)
 
 [Design](https://github.com/NEU-ZYXi/LeetCode/tree/master/Design)
