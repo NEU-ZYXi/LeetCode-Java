@@ -40,6 +40,8 @@
 
 [Stack](https://github.com/NEU-ZYXi/LeetCode/tree/master/Stack)
 
+[Sliding Window](https://github.com/NEU-ZYXi/Xi-LeetCode/tree/master/Sliding%Window)
+
 [Heap](https://github.com/NEU-ZYXi/LeetCode/tree/master/Heap)
 
 [Trie](https://github.com/NEU-ZYXi/LeetCode/tree/master/Trie)
