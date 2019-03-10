@@ -22,9 +22,9 @@ Window position                Max
 
 /*
 
-Solution: use a deque to maintain the maximum of the current window
-          if deque[first]<i-k+1, which means the window moves to right, pollFirst()
-          while nums[deque[last]]<nums[i] then pollLast(), so all the previous elements in the window have nums[i] as maximum
+Solution 1: use a deque to maintain the maximum of the current window
+            if deque[first]<i-k+1, which means the window moves to right, pollFirst()
+            while nums[deque[last]]<nums[i] then pollLast(), so all the previous elements in the window have nums[i] as maximum
 O(n),O(n)          
 
 */
