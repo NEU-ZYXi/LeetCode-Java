@@ -38,6 +38,8 @@
 
 [Recursion](https://github.com/NEU-ZYXi/LeetCode/tree/master/Recursion)
 
+[Queue](https://github.com/NEU-ZYXi/Xi-LeetCode/tree/master/Queue)
+
 [Stack](https://github.com/NEU-ZYXi/LeetCode/tree/master/Stack)
 
 [Sliding Window](https://github.com/NEU-ZYXi/Xi-LeetCode/tree/master/Sliding%20Window)
