@@ -63,9 +63,11 @@ class SnakeGame {
         E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */
     public SnakeGame(int width, int height, int[][] food) {
         this.snake = new LinkedList<>();
+        this.snake.add(new int[] {0, 0});
         this.width = width;
         this.height = height;
         this.food = food;
+        this.x = this.y = this.i = 0;
     }
     
     /** Moves the snake.
@@ -80,12 +82,12 @@ class SnakeGame {
             case "D": x++; 
         }
         if (x < 0 || x >= height || y < 0 || y >= width) return -1;
-        for (int i = 1; i < snake.size(); ++i) {
-            if (snake.get(i)[0] == x && snake.get(i)[1] == y) return -1;
+        for (int j = 1; j < snake.size(); ++j) {
+            if (snake.get(j)[0] == x && snake.get(j)[1] == y) return -1;
         }
         if (i < food.length && food[i][0] == x && food[i][1] == y) i++;
-        else if (snake.size() > 0) snake.remove(0);
-        snake.addFirst(new int[] {x, y});
+        else snake.remove(0);
+        snake.add(new int[] {x, y});
         return i;
     }
 }
