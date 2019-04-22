@@ -56,6 +56,8 @@
 
 [Design](https://github.com/NEU-ZYXi/LeetCode/tree/master/Design)
 
+[Reservoir Sampling](https://github.com/NEU-ZYXi/LeetCode/tree/master/Reservoir%20Sampling)
+
 [Brainteaser](https://github.com/NEU-ZYXi/LeetCode/tree/master/Brainteaser)
 
 [MySQL](https://github.com/NEU-ZYXi/LeetCode/tree/master/MySQL)
