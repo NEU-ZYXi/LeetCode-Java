@@ -64,4 +64,6 @@
 
 [Bash](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bash)
 
+[Other](https://github.com/NEU-ZYXi/LeetCode/tree/master/Other)
+
 # Thank you
