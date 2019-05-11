@@ -29,7 +29,7 @@ O(n),O(n)
 
 public boolean find132pattern(int[] nums) {
     int second = Integer.MIN_VALUE;
-    Deque<Integer> deque = new LinkedList<>();
+    Deque<Integer> deque = new ArrayDeque<>();
     for (int i = nums.length - 1; i >= 0; --i) {
         if (nums[i] < second) return true;
         while (!deque.isEmpty() && nums[i] > deque.peekLast()) second = deque.pollLast(); 
