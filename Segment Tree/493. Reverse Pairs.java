@@ -16,7 +16,12 @@ Output: 3
 
 /*
 
-Solution 1: 
+Solution 1: for each number, get num*2+1 which is smallest to form a reverse pair, use sorted set to discretize all numbers
+            use a map to map index of each number
+            build the initial segment tree using the static segment tree 
+            for each number in the original array, query the segTree[map[num*2+1]...n] to accumulate cnt
+            then update segment tree with the current number, which is to update segTree[map[num]]
+O(nlogn),O(n)            
 
 */
 
