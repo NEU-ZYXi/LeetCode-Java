@@ -19,6 +19,7 @@ Output: return the tree root node representing the following tree:
 
 /*
 
+Solution 1: recursively find left and right subtree
 O(n),O(logn)
 
 */
@@ -51,6 +52,45 @@ public TreeNode str2tree(String s) {
         root.right = str2tree(s.substring(j + 1, n - 1));
     }
     return root;
+}
+
+
+/*
+
+Solution 2: use a stack to construct left and right subtree
+O(n),O(n)
+
+*/
+
+public TreeNode str2tree(String s) {
+    Deque<TreeNode> deque = new ArrayDeque<>();
+    int n = s.length(), i = 0, j = 0;
+    if (n == 0) {
+        return null;
+    }
+    while (j < n) {
+        char c = s.charAt(j);
+        if (Character.isDigit(c) || c == '-') {
+            while (j + 1 < n && Character.isDigit(s.charAt(j + 1))) {
+                j++;
+            }
+            TreeNode cur = new TreeNode(Integer.valueOf(s.substring(i, j + 1)));
+            if (!deque.isEmpty()) {
+                TreeNode parent = deque.peekLast();
+                if (parent.left != null) {
+                    parent.right = cur;
+                } else {
+                    parent.left = cur;
+                }
+            }
+            deque.offerLast(cur);
+        } else if (c == ')') {
+            deque.pollLast();
+        }
+        j++;
+        i = j;
+    }
+    return deque.peekLast();
 }
 
 
