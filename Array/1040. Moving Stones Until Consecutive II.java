@@ -32,7 +32,11 @@ Output: [0,0]
 
 /*
 
-Solution: 
+Solution: 1. for max, either move all stones to left or right, which means fill all the plots of A[0]+(n-1) or A[n-1]-(n-1)
+             then we need move of A[n-2]-(A[0]+(n-1))+1 or A[n-1]-(n-1)-A[1]+1 because A[n-1] or A[0] can only move once
+          2. for min, maintain a window of distance N, for each window, the elements outside should be moved inside
+             for corner case which is A[0...n-2] consecutive and A[n-1] outside, we can have 2 move min
+O(nlogn),O(1)             
 
 */
 
