@@ -1,4 +1,4 @@
-# LeetCode
+# LeetCode (https://leetcode.com/stevenxi/)
 
 [Array](https://github.com/NEU-ZYXi/LeetCode/tree/master/Array)
 
