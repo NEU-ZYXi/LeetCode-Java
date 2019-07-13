@@ -1,4 +1,4 @@
-# LeetCode (https://leetcode.com/stevenxi/)
+# LeetCode ( https://leetcode.com/stevenxi/ )
 
 [Array](https://github.com/NEU-ZYXi/LeetCode/tree/master/Array)
 
@@ -63,5 +63,7 @@
 [MySQL](https://github.com/NEU-ZYXi/LeetCode/tree/master/MySQL)
 
 [Bash](https://github.com/NEU-ZYXi/LeetCode/tree/master/Bash)
+
+[Concurrency](https://github.com/NEU-ZYXi/LeetCode-Java/tree/master/Concurrency)
 
 [Other](https://github.com/NEU-ZYXi/LeetCode/tree/master/Other)
