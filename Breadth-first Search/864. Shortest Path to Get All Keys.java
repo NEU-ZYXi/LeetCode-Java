@@ -25,7 +25,7 @@ Output: 6
 
 /*
 
-Solution: create a node with position and keys, BFS to find the shortest path
+Solution 1: create a node with position and keys, BFS to find the shortest path
 O(nm),O(nm)
 
 */
@@ -112,6 +112,76 @@ public int shortestPathAllKeys(String[] grid) {
     }
     return -1;
 }
+
+
+/*
+
+Solution 2: use bit mask to represent keys state
+O(nm),O(nm)
+
+*/
+
+class Tuple {
+    private int x, y, keys;
+
+    public Tuple(int x, int y, int keys) {
+        this.x = x;
+        this.y = y;
+        this.keys = keys;
+    }
+}
+
+private int[][] dirs = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+public int shortestPathAllKeys(String[] grid) {
+    int n = grid.length, m = grid[0].length(), x = -1, y = -1, ans = 0, max = 0;
+    Queue<Tuple> queue = new LinkedList<>();
+    Set<String> vis = new HashSet<>();
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            char c = grid[i].charAt(j);
+            if (c == '@') {
+                x = i;
+                y = j;
+            }
+            if (c >= 'a' && c <= 'f') {
+                max = Math.max(c - 'a' + 1, max);
+            }
+        }
+    }
+    Tuple start = new Tuple(x, y, 0);
+    queue.offer(start);
+    vis.add(x + "," + y + "," + 0);
+    while (!queue.isEmpty()) {
+        int sz = queue.size();
+        for (int i = 0; i < sz; ++i) {
+            Tuple cur = queue.poll();
+            if (cur.keys == (1 << max) - 1) {
+                return ans;
+            }
+            for (int[] dir : dirs) {
+                int nx = cur.x + dir[0], ny = cur.y + dir[1], keys = cur.keys;
+                if (0 <= nx && nx < n && 0 <= ny && ny < m) {
+                    char c = grid[nx].charAt(ny);
+                    if (c == '#') {
+                        continue;
+                    } else if (c >= 'a' && c <= 'f') {
+                        keys |= 1 << (c - 'a');
+                    } else if (c >= 'A' && c <= 'F' && ((keys >> (c - 'A')) & 1) == 0) {
+                        continue;
+                    }
+                    Tuple next = new Tuple(nx, ny, keys);
+                    if (vis.add(nx + "," + ny + "," + keys)) {
+                        queue.offer(next);
+                    }
+                }
+            }
+        }
+        ans++;
+    }
+    return -1;
+}
+
 
 
 
