@@ -60,11 +60,6 @@ class Tuple {
         result = 31 * result + this.keys.hashCode();
         return result;
     }
-
-    @Override
-    public String toString() {
-        return "" + this.x + this.y + this.keys.toString();
-    }
 }
 
 private int[][] dirs = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
